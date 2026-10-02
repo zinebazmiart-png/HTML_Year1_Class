@@ -1,4 +1,5 @@
 body{margin: 0;}
+/*Setting font families for the page*/
 @font-face {
     font-family: "YellowRabbit";
     src: url("../fonts/Yellowrabbit.otf") format("opentype");
@@ -14,6 +15,9 @@ p,a,l{
     font-family: "EB Garamond", sans-serif;
     text-decoration: none;
 }
+/*Styling the header*/
+/*Background*/
+
 header{
     height: 150px;
     padding: 5px 5%;
@@ -25,10 +29,14 @@ header > div{
     padding-top: 5px;
     float: left;
 }
+/*Logo*/
+
 header > div > a > img{
     width: auto;
     height: 100%;
 }
+/*Menu*/
+
 header > nav > menu {
     float: right;
     list-style: none;
@@ -38,14 +46,32 @@ header > nav > menu {
     line-height: 140px;
 
 }
+
 header > nav > menu > li{
     float: left;
     padding: 0 5px;
 }
+/*Menu Styling*/
 
 header > nav > menu > li > a{
-    color: #0e0e0e
+    color: #ffffff;
+    padding: 10px;
+    font-weight:400;
+
 }
+/*Menu hover effects*/
+
+header > nav > menu> li > a:hover{
+    padding: 10px;
+    transition:500ms;
+    background-color: #ff4d00;
+    font-weight:500;
+
+}
+
+
+/*Main - Content*/
+/*Title styling*/
 
 .Title > div > h1{
     font-size: 7rem;
@@ -67,6 +93,8 @@ header > nav > menu > li > a{
     top: 50%;
     left: 25%;
 }
+/*Main - Hero Banner*/
+/*Main - Video Sizing*/
 .hero-section {
     width: 100%;
     margin: 0 auto;
