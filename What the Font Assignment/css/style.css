@@ -57,4 +57,7 @@ header > nav > menu > li > a{
     color: #f9a825;
     letter-spacing: 1.75px;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.8);
+    margin:0;
+    Position: relative;
+    top: 50%;
 }
