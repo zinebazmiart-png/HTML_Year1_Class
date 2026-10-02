@@ -1,0 +1,8 @@
+body{margin: 0;}
+@font-face {
+    font-family: "YellowRabbit";
+    src: url("../fonts/Yellowrabbit.otf") format("opentype");
+}
+h1{
+    font-family: "YellowRabbit", sans-serif;
+}
