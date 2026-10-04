@@ -12,6 +12,16 @@ body{margin: 0;}
     font-family: "OldEn";
     src: url("../fonts/Olde English Regular.ttf") format("opentype");
 }
+@font-face{
+    font-family: "Cursive";
+    src: url("../fonts/Cursive\ Option.ttf") format("opentype");
+}
+@font-face{
+    font-family: "Deranged";
+    src: url("../fonts/who\ asks\ satan.ttf") format("opentype");
+}
+/*Setting font families for the page*/
+
 h1{
     font-family: "Slime", sans-serif;
 }
@@ -29,6 +39,12 @@ mark{
 mark + mark {
         font-family: "OldEn", sans-serif;
 
+}
+Mark + Mark + Mark {
+        font-family: "Cursive", sans-serif;
+}
+Mark + Mark + Mark + mark {
+        font-family: "Deranged", sans-serif;
 }
 /*Styling the header*/
 /*Background*/
@@ -126,6 +142,8 @@ header > nav > menu> li > a:hover{
     transform: translate(-50%, -50%);
     object-fit: cover; 
 }
+
+
 .Lyrics > div > p{
     font-size: 1.5rem;
     text-align: center;
@@ -138,14 +156,29 @@ header > nav > menu> li > a:hover{
     background-color: transparent;
     font-weight: 600;
 }
-.grow span:nth-child(1){font-size:2em}
-.grow span:nth-child(2){font-size:2em}
-.grow span:nth-child(3){font-size:2.6em}
-.grow span:nth-child(4){font-size:2.2em}
-.grow span:nth-child(5){font-size:2em}
+.grow span:nth-child(1){font-size:1.5em}
+.grow span:nth-child(2){font-size:1.5em}
+.grow span:nth-child(3){font-size:2.1em}
+.grow span:nth-child(4){font-size:1.7em}
+.grow span:nth-child(5){font-size:1.5em}
 
 .Lyrics > div > p > mark + mark{
     color:#751000;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.Lyrics > div > p > mark + mark + mark{
+    color:#751000;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.Lyrics > div > p > mark + mark + mark + mark{
+    color:#003775;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
