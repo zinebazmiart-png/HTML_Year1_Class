@@ -4,8 +4,16 @@ body{margin: 0;}
     font-family: "YellowRabbit";
     src: url("../fonts/Yellowrabbit.otf") format("opentype");
 }
+@font-face {
+    font-family: "Slime";
+    src: url("../fonts/EuroHorror.ttf") format("opentype");
+}
+@font-face {
+    font-family: "OldEn";
+    src: url("../fonts/Olde English Regular.ttf") format("opentype");
+}
 h1{
-    font-family: "YellowRabbit", sans-serif;
+    font-family: "Slime", sans-serif;
 }
 h2,h3,h4,h5,h6{
     font-family: "EB Garamond", sans-serif;
@@ -16,7 +24,11 @@ p,a,l {
     text-decoration: none;
 }
 mark{
-    font-family: "YellowRabbit", sans-serif;
+    font-family: "Slime", sans-serif;
+}
+mark + mark {
+        font-family: "OldEn", sans-serif;
+
 }
 /*Styling the header*/
 /*Background*/
@@ -79,7 +91,7 @@ header > nav > menu> li > a:hover{
 .Title > div > h1{
     font-size: 7rem;
     color: #8aff57;
-    letter-spacing: 1.75px;
+    letter-spacing:10px;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.5);
     margin:20px;
     Position: relative;
@@ -118,16 +130,35 @@ header > nav > menu> li > a:hover{
     font-size: 1.5rem;
     text-align: center;
     Margin: 50 px;
+    white-space: pre-line;
 }
 .Lyrics > div > p > mark{
-    color:#8aff57;
+    color:#2b4d1c;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
-    font-size: 6rem;
 }
+.grow span:nth-child(1){font-size:2em}
+.grow span:nth-child(2){font-size:2em}
+.grow span:nth-child(3){font-size:2.6em}
+.grow span:nth-child(4){font-size:2.2em}
+.grow span:nth-child(5){font-size:2em}
+
 .Lyrics > div > p > mark + mark{
-    color:#7057ff;
+    color:#751000;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
-    font-size: 6rem;
+    font-size: 3rem;
+}
+
+.footer {
+    height: 150px;
+    padding: 5px 5%;
+    background-color: #ff6a00;
+}
+.footer > h6 {
+    font-size: 1rem;
+    color: #ffffff;
+    float: left;
 }
