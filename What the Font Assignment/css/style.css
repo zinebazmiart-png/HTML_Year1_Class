@@ -20,6 +20,10 @@ body{margin: 0;}
     font-family: "Deranged";
     src: url("../fonts/who\ asks\ satan.ttf") format("opentype");
 }
+@font-face{
+    font-family: "Machine";
+    src: url("../fonts/TH3\ MACHINE.ttf") format("opentype");
+}
 /*Setting font families for the page*/
 
 h1{
@@ -33,19 +37,49 @@ p,a,l {
     font-family: "EB Garamond", sans-serif;
     text-decoration: none;
 }
+/*GROSS*/
 mark{
     font-family: "Slime", sans-serif;
 }
-mark + mark {
-        font-family: "OldEn", sans-serif;
+/*Perverted*/
 
+mark:nth-of-type(2) {
+        font-family: "OldEn", sans-serif;
 }
-Mark + Mark + Mark {
+/*Obssessed*/
+
+mark:nth-of-type(3) {
         font-family: "Cursive", sans-serif;
 }
-Mark + Mark + Mark + mark {
+/*Deranged*/
+
+mark:nth-of-type(4) {
         font-family: "Deranged", sans-serif;
 }
+/*Years*/
+
+mark:nth-of-type(5) {
+        font-family: "OldEn", sans-serif;
+}
+/*Changed*/
+
+mark:nth-of-type(6) {
+        font-family: "Cursive", sans-serif;
+}
+
+/*tool of the government*/
+mark:nth-of-type(7) {
+        font-family: "Machine", sans-serif;
+}
+/*rule*/
+mark:nth-of-type(8) {
+        font-family: "Slime", sans-serif;
+}
+/*regulate*/
+mark:nth-of-type(9) {
+        font-family: "Slime", sans-serif;
+}
+
 /*Styling the header*/
 /*Background*/
 
@@ -105,9 +139,9 @@ header > nav > menu> li > a:hover{
 /*Title styling*/
 
 .Title > div > h1{
-    font-size: 7rem;
+    font-size: 6rem;
     color: #8aff57;
-    letter-spacing:10px;
+    letter-spacing:6px;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.5);
     margin:20px;
     Position: relative;
@@ -145,7 +179,7 @@ header > nav > menu> li > a:hover{
 
 
 .Lyrics > div > p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     Margin: 50 px;
     white-space: pre-line;
@@ -162,29 +196,63 @@ header > nav > menu> li > a:hover{
 .grow span:nth-child(4){font-size:1.7em}
 .grow span:nth-child(5){font-size:1.5em}
 
-.Lyrics > div > p > mark + mark{
-    color:#751000;
+.Lyrics > div > p > mark:nth-of-type(2){
+    color:#870000;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 4rem;
 }
-.Lyrics > div > p > mark + mark + mark{
-    color:#751000;
+.Lyrics > div > p > mark:nth-of-type(3){
+    color:#870000;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
-    font-size: 3rem;
-}
-
-.Lyrics > div > p > mark + mark + mark + mark{
-    color:#003775;
-    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
-    background-color: transparent;
-    font-weight: 600;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
+.Lyrics > div > p > mark:nth-of-type(4){
+    color:#1b0044;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 4rem;
+}
+.Lyrics > div > p > mark:nth-of-type(5){
+    color:#000d9a;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.Lyrics > div > p > mark:nth-of-type(6){
+    color:#000d9a;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.Lyrics > div > p > mark:nth-of-type(7){
+    color:#000d9a;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.Lyrics > div > p > mark:nth-of-type(8){
+    color:#870000;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 3rem;
+}
+.Lyrics > div > p > mark:nth-of-type(9){
+    color:#870000;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 3rem;
+}
 .footer {
     height: 150px;
     padding: 5px 5%;
