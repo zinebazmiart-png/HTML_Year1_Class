@@ -47,12 +47,12 @@ p,a,l {
     text-decoration: none;
 }
 /*GROSS*/
-mark{
+.Growletters {
     font-family: "Slime", sans-serif;
 }
 /*Perverted*/
 
-mark:nth-of-type(2) {
+.Perverted {
         font-family: "OldEn", sans-serif;
 }
 /*Obssessed*/
@@ -249,71 +249,88 @@ header > nav > menu> li > a:hover{
     transform: translate(-50%, -50%);
     object-fit: cover; 
 }
-
-
 .Lyrics > div > p{
     font-size: 2rem;
     text-align: center;
     Margin: 50 px;
     white-space: pre-line;
 }
-.Lyrics > div > p > mark{
-    color:#2b4d1c;
+/*Change in letter sizes*/
+.Growletters mark{font-size:5rem}
+.Growletters mark:nth-child(2){font-size:5.2rem}
+.Growletters mark:nth-child(3){font-size:6rem}
+.Growletters mark:nth-child(4){font-size:5.2rem}
+.Growletters mark:nth-child(5){font-size:5rem}
+
+.Perverted  mark:nth-child(2){font-size: 7rem}
+.Perverted  mark:nth-child(3){font-size:7rem}
+
+.years mark {font-size: 5rem;}
+
+.rule mark {font-size: 5.5rem;}
+.regulate mark {font-size: 5.5rem;}
+/*Word Styling*/
+.Growletters *,
+.Perverted *,
+.years *,
+.rule *,
+.regulate * {
+    color: inherit;
+    background-color: transparent;
+}
+.Growletters{
+    color:#1e6300;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
 }
-.grow span:nth-child(1){font-size:1.5em}
-.grow span:nth-child(2){font-size:1.5em}
-.grow span:nth-child(3){font-size:2.1em}
-.grow span:nth-child(4){font-size:1.7em}
-.grow span:nth-child(5){font-size:1.5em}
 
-.Lyrics > div > p > mark:nth-of-type(2){
+/* Perverted Colors and Size*/
+.Perverted {
     color:#870000;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 5rem;
 }
-.Lyrics > div > p > mark:nth-of-type(3){
+.Obsessed{
     color:#870000;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 3em;
 }
 
-.Lyrics > div > p > mark:nth-of-type(4){
+.Deranged {
     color:#1b0044;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 7rem;
     
 }
-.Lyrics > div > p > mark:nth-of-type(5){
+.years {
     color:#000d9a;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
     font-size: 3rem;
 }
-.Lyrics > div > p > mark:nth-of-type(6){
-    color:#000d9a;
+.changed{
+    color:#510751;
+    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 5rem;
+}
+.tool{
+    color:#002c12;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
     font-weight: 600;
     font-size: 3rem;
 }
-.Lyrics > div > p > mark:nth-of-type(7){
-    color:#000d9a;
-    text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
-    background-color: transparent;
-    font-weight: 600;
-    font-size: 3rem;
-}
-.Lyrics > div > p > mark:nth-of-type(8){
+.rule{
     color:#870000;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     background-color: transparent;
