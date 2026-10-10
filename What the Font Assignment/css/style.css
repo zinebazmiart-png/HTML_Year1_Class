@@ -28,6 +28,11 @@ body{margin: 0;}
     font-family: "Radio";
     src: url("../fonts/Static.ttf");
 }
+@font-face {
+    font-family: "Sing";
+    src: url("../fonts/The-Bash-Singing-SlashyFont.ttf");
+}
+
 /*Assigning font families*/
 
 h1{
@@ -84,6 +89,70 @@ mark:nth-of-type(9) {
         font-family: "Slime", sans-serif;
 }
 
+/*Vile and pernicious*/
+mark:nth-of-type(10){
+    font-family: "Slime", sans-serif;
+}
+/*Delicious*/
+mark:nth-of-type(11){
+    font-family: "Cursive", sans-serif;
+}
+/*Me*/
+mark:nth-of-type(12){
+    font-family: "Deranged", sans-serif;
+}
+/*I'm the slime oozing out of your tv set*/
+mark:nth-of-type(13){
+    font-family: "Slime", sans-serif;
+}
+/*Obey me when I lead you*/
+
+mark:nth-of-type(14){
+    font-family:"Machine", sans-serif;
+}
+/*Garbage*/
+mark:nth-of-type(15){
+    font-family: "Slime", sans-serif;
+}
+/*We don't need you*/
+mark:nth-of-type(16){
+    font-family: "OldEn", sans-serif;
+}
+/*NoOne will heed you*/
+mark:nth-of-type(17){
+    font-family: "Deranged", sans-serif;
+}
+/*Controlled*/
+mark:nth-of-type(18){
+font-family: "Cursive", sans-serif;
+
+}
+/*Stuffed into my mold*/
+mark:nth-of-type(19){
+font-family: "Cursive", sans-serif;
+
+}
+/*as you are told*/
+mark:nth-of-type(20){
+font-family: "OldEn", sans-serif;
+
+}
+/*sold*/
+mark:nth-of-type(21){
+font-family: "OldEn", sans-serif;
+
+}
+
+/*Radio Bit*/
+mark:nth-of-type(22){
+font-family: "Radio", sans-serif;
+
+}
+/*Women Singing*/
+mark:nth-of-type(23){
+font-family: "Sing", sans-serif;
+
+}
 /*Styling the header*/
 
 header{
@@ -149,13 +218,13 @@ header > nav > menu> li > a:hover{
     text-shadow: 4px 3px 4px rgba(0,0,0,0.5);
     margin:20px;
     Position: relative;
-    top: 50%;
+    top: 100%;
     text-align: center;
 }
 .Title > div > h2{
     font-size: 2rem;
     color: #ff6a00;
-    letter-spacing: 1.75px;
+    letter-spacing: .5px;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.1);
     margin:20px;
     Position: relative;
@@ -171,7 +240,7 @@ header > nav > menu> li > a:hover{
    aspect-ratio: 21 / 9 ;
    position: relative;
 }
-.hero-section > iframe {
+.hero-section > video {
     position: absolute;
     top:50%;
     left:50%;
