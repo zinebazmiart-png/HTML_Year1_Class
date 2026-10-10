@@ -24,7 +24,11 @@ body{margin: 0;}
     font-family: "Machine";
     src: url("../fonts/TH3\ MACHINE.ttf") format("opentype");
 }
-/*Setting font families for the page*/
+@font-face {
+    font-family: "Radio";
+    src: url("../fonts/Static.ttf");
+}
+/*Assigning font families*/
 
 h1{
     font-family: "Slime", sans-serif;
@@ -81,7 +85,6 @@ mark:nth-of-type(9) {
 }
 
 /*Styling the header*/
-/*Background*/
 
 header{
     height: 150px;
@@ -134,6 +137,7 @@ header > nav > menu> li > a:hover{
 
 }
 
+/*Background*/
 
 /*Main - Content*/
 /*Title styling*/
@@ -217,6 +221,7 @@ header > nav > menu> li > a:hover{
     background-color: transparent;
     font-weight: 600;
     font-size: 4rem;
+    
 }
 .Lyrics > div > p > mark:nth-of-type(5){
     color:#000d9a;
