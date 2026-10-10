@@ -41,7 +41,7 @@ h1{
 h2,h3,h4,h5,h6{
     font-family: "EB Garamond", sans-serif;
 }
-p,a,l {
+p,a {
     font-size: 1.2rem;
     font-family: "EB Garamond", sans-serif;
     text-decoration: none;
@@ -204,13 +204,15 @@ header > nav > menu > li > a{
 header > nav > menu> li > a:hover{
     padding: 20px;
     transition:500ms;
-    background-color: #151148;
+    background-color: #242052;
     font-weight:500;
 
 }
 
 /*Background*/
-
+body {
+    background-color: #e1f2ff;
+}
 /*Main - Content*/
 /*Title styling*/
 
@@ -220,9 +222,10 @@ header > nav > menu> li > a:hover{
     letter-spacing:6px;
     text-shadow: 4px 3px 4px rgba(0,0,0,0.5);
     margin:20px;
-    Position: relative;
+    position: relative;
     top: 100%;
     text-align: center;
+    padding-top: 50px;
 }
 .Title > div > h2{
     font-size: 2rem;
@@ -237,13 +240,13 @@ header > nav > menu> li > a:hover{
 }
 /*Main - Hero Banner*/
 /*Main - Video Sizing*/
-.hero-section {
+.hero-section > div {
     width: auto;
     margin: 0 auto;
    aspect-ratio: 21 / 9 ;
    position: relative;
 }
-.hero-section > video {
+.hero-section > div > video {
     position: absolute;
     top:50%;
     left:50%;
@@ -502,8 +505,9 @@ header > nav > menu> li > a:hover{
     padding: 5px 5%;
     background-color: #0b0838;
 }
-.footer > h6 {
+.footer > h3 {
     font-size: 1rem;
     color: #ffffff;
     float: left;
+    padding-top: 50px;
 }
