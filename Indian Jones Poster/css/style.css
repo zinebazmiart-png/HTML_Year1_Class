@@ -9,7 +9,10 @@ font-family: "Doom";
 * {
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: "CreditsIndiana";
+    src: url('../fonts/Antonio-Bold.ttf')format("truetype");
+}
 body {
     margin: 0;
     height: 100vh;
@@ -176,20 +179,39 @@ main {
 
 /* Bottom credits */
 .Credits {
+    font-family: "Doom";
+    font-weight: bold;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-
     text-align: center;
+    
     color: #174b48;
-    font-size: 0.8vh;
-    line-height: 1.1;
-    padding: 0 15%;
+    font-size: 1vh;
+    line-height: 1;
+    padding: 0% 7%;
 }
+.Credits p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
-.Credits p {
-    margin: 2px;
+    color: #174b48;
+    font-size: 1vh;
+    margin-bottom: 0.1vh;
+}
+.Credits p:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    color: #174b48;
+    font-size: 1vh;
+    margin-bottom: 0.1vh;
+    margin-top: 0.1vh;
+
 }
 
 /* Remove yellow highlighting */
