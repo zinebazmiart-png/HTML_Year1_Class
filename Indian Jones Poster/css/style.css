@@ -49,7 +49,7 @@ main {
     justify-content: flex-start;
     align-items: center;
 
-    padding-top: 5%;
+    padding-top: 3%;
     padding-left: 1%;
     text-align: center;
     margin-bottom: 0;
@@ -62,9 +62,11 @@ main {
     justify-content: center left;
     align-items: flex-start;
     /*This sets its font and size*/
-
+    font-kerning: auto;
     font-family: "TitleIndiana";
     margin: 0;
+    margin-bottom: 0;
+    padding-bottom:0%;
     padding: 10px 15px;
     line-height: 1.2;
      /*This creates a gradient background image*/
@@ -83,7 +85,7 @@ main {
     /*This makes the font cut out the gradient background, so it is only within the text and not over it*/
     -webkit-background-clip: text;
     /*This gives the text a black outline and a drop shadow*/
-    -webkit-text-stroke: 0.2px black;
+    -webkit-text-stroke: 0.1px black;
     filter: drop-shadow(-5px 5px 0px black);
 }
 
@@ -153,25 +155,38 @@ main {
 
 /*AND THE TEMPLE OF DOOM */
 .Title h2 {
-    font-family: "Doom";
-    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 0;
-    color:#174b48;
 
-    flex-direction: column;
-    justify-content: center left;
-    
+    transform: translateY(-30px);
+}
+.Title h2 mark:nth-child(1){
+    font-family: "Doom";
+    font-size: 0.8rem;
+    margin: 0;
+    color:#353559;
+
     
     line-height: 1;
-    padding: 0% 7%;
+    white-space: nowrap;
+
+    transform: translate(110px, -32px);
+
 }
 
-.Title h2 mark {
+.Title h2 mark:nth-child(2){
     font-family: "Doom";
-    font-size: clamp(10px, 1.6vh, 20px);
-    margin: 0;
-    color: #ff4a22;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+
+    padding: 0%;
+
+    color: #eac463;
     -webkit-text-stroke: 0.1px black;
+    filter: drop-shadow(-0.9px 1px 0px black);
+    transform: translate(20px, -15px);
 }
 
 
