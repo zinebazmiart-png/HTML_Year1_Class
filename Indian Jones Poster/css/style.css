@@ -10,9 +10,14 @@ font-family: "Doom";
     box-sizing: border-box;
 }
 @font-face {
-    font-family: "CreditsIndiana";
+    font-family: "CreditsIndianaBold";
     src: url('../fonts/Antonio-Bold.ttf')format("truetype");
 }
+@font-face {
+    font-family: "CreditsIndiana";
+    src: url('../fonts/Antonio-Regular.ttf')format("truetype");
+}
+/*Setting the Image to the center of the webpage, hiding any overflow, and setting the background to black*/
 body {
     margin: 0;
     height: 100vh;
@@ -24,7 +29,7 @@ body {
     overflow: hidden;
 }
 
-/* Entire poster */
+/* The poster image's size and aspect ratio are set. */
 main {
     width: min(63vh, 100vw);
     aspect-ratio: 2 / 3;
@@ -37,7 +42,7 @@ main {
     display: grid;
 }
 
-/* Title at the top */
+/* INDIANA JONES AND THE TEMPLE OF DOOM title position */
 .Title {
     display: flex;
     flex-direction: column;
@@ -45,18 +50,24 @@ main {
     align-items: center;
 
     padding-top: 5%;
-    padding-left: 15%;
+    padding-left: 1%;
     text-align: center;
+    margin-bottom: 0;
 }
+/*INDIANA JONES title colour and styling*/
 .Title h1 {
+    /*This sets its position using flexbox*/
+
     display: flex;
-    justify-content: center;
+    justify-content: center left;
     align-items: flex-start;
+    /*This sets its font and size*/
 
     font-family: "TitleIndiana";
     margin: 0;
-    padding: 10px 15px 20px;
+    padding: 10px 15px;
     line-height: 1.2;
+     /*This creates a gradient background image*/
 
     background-image: linear-gradient(
         to top,
@@ -68,18 +79,15 @@ main {
         #ff4a22,
         #ff4a22
     );
-    
-    background-size: 2000% 100%;
-    background-position: left center;
-    background-clip: text;
+    background-size: 200% 100%;
+    /*This makes the font cut out the gradient background, so it is only within the text and not over it*/
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    /*This gives the text a black outline and a drop shadow*/
     -webkit-text-stroke: 0.2px black;
-
     filter: drop-shadow(-5px 5px 0px black);
 }
 
+/*This changes the position and size of each letter to obtain the same look as the original poster's title */
 .Title h1 mark {
     display: inline-block;
     background: transparent;
@@ -90,7 +98,6 @@ main {
 .Title h1 mark:nth-child(1) {
     font-size: 15vh;
     margin-top: -3vh;
-    margin-left: -12vh;
 }
 
 .Title h1 mark:nth-child(2) {
@@ -143,11 +150,20 @@ main {
     font-size: 4vh;
     margin-top: -0.8vh;
 }
+
+/*AND THE TEMPLE OF DOOM */
 .Title h2 {
     font-family: "Doom";
-    font-size: clamp(10px, 1.6vh, 50px);
+    font-size: 1em;
     margin: 0;
     color:#174b48;
+
+    flex-direction: column;
+    justify-content: center left;
+    
+    
+    line-height: 1;
+    padding: 0% 7%;
 }
 
 .Title h2 mark {
@@ -179,8 +195,7 @@ main {
 
 /* Bottom credits */
 .Credits {
-    font-family: "Doom";
-    font-weight: bold;
+    font-family: "CreditsIndiana";
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,6 +207,7 @@ main {
     padding: 0% 7%;
 }
 .Credits p:nth-child(1) {
+    font-family: "CreditsIndianaBold";
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -202,6 +218,7 @@ main {
     margin-bottom: 0.1vh;
 }
 .Credits p:nth-child(2) {
+    font-family: "CreditsIndianaBold";
     display: flex;
     flex-direction: column;
     justify-content: center;
