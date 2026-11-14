@@ -42,7 +42,7 @@ main {
     display: grid;
     grid-template-rows: 1fr auto auto;
     align-content: stretch;
-    padding-bottom: 3%;
+    padding-bottom: 2vmin;
 }
 
 /* INDIANA JONES AND THE TEMPLE OF DOOM title position */
@@ -56,6 +56,9 @@ main {
     padding-left: 1%;
     text-align: center;
     margin-bottom: 0;
+}
+.Title a {
+    text-decoration: none;
 }
 /*INDIANA JONES title colour and styling*/
 .Title h1 {
@@ -90,8 +93,15 @@ main {
     /*This gives the text a black outline and a drop shadow*/
     -webkit-text-stroke: 0.1px black;
     filter: drop-shadow(-5px 5px 0px black);
+    transition: transform 0.3s ease;
+
+
 }
 
+.Title h1:hover{
+    transform: scale(1.05);
+
+}
 /*This changes the position and size of each letter to obtain the same look as the original poster's title */
 .Title h1 mark {
     display: inline-block;
@@ -193,18 +203,25 @@ main {
 
 
 
-.BtmTxt{
-     display: flex;
+/* BOTTOM TEXT CONTAINER */
+.BtmTxt {
+    color: #1a5248;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: stretch;
 
     align-self: end;
+    width: 100%;
+
+    padding: 0vmin 2vmin 0.01vmin;
     margin: 0;
-    gap: 0.2vmin;
+    letter-spacing: -0.04vh;
+
+    gap: 1vmin;
 }
-/* Paramount text */
+
+/* PARAMOUNT TEXT */
 .Paramount {
     font-family: "CreditsIndianaBold";
 
@@ -214,12 +231,11 @@ main {
     align-items: center;
 
     text-align: center;
-    color: #174b48;
-    font-size: 0.6vh;
-    padding: 0% 7%;
-
-    gap: 2px;
+    font-size: 0.63vh;
+    padding-top: 0%;
+    padding: 0;
     margin: 0;
+    gap: 0.1vmin;
 }
 
 .Paramount p {
@@ -228,22 +244,32 @@ main {
 }
 
 
-/* Bottom credits */
+/* BOTTOM CREDITS */
 .Credits {
     font-family: "CreditsIndiana";
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
 
     text-align: center;
-    color: #174b48;
-    font-size: 1vh;
-    line-height: 1;
+    color: #1a5248;
+    font-size: 0.7vh;
+    line-height: 0.9;
+    gap: 0.15vmin;
+    padding-bottom: 1.5vmin;
+}
 
+/* RESET PARAGRAPH SPACING */
+.Credits > p {
+    width: 100%;
     margin: 0;
-    gap: 0.4vmin;
+    line-height: 0.9;
 }
 
 /* HARRISON FORD */
@@ -251,19 +277,19 @@ main {
     font-family: "CreditsIndianaBold";
     font-size: 1vh;
     margin: 0;
+    padding-bottom: 0.2vh;
 }
 
 /* INDIANA JONES AND THE TEMPLE OF DOOM */
 .Credits p:nth-child(2) {
     font-family: "CreditsIndianaBold";
-    font-size: 1.1vh;
+    font-size: 1vh;
     margin: 0;
 }
 
 /* KATE CAPSHAW TO PHILIP STONE */
 .Credits p:nth-child(3) mark:nth-child(1) {
     font-family: "CreditsIndianaBold";
-    color: #174b48;
     font-size: 1vh;
 }
 
@@ -276,18 +302,18 @@ main {
 
     font-family: "CreditsIndiana";
     font-size: 0.5vh;
-    line-height: 0.9;
+    line-height: 1;
 
-    color: #174b48;
     vertical-align: middle;
     white-space: nowrap;
-    margin: 0 2px;
+    margin: 0 0.2vmin;
 }
 
 /* KEY HUY QUAN */
 .Credits .Key {
     font-family: "CreditsIndianaBold";
     margin: 0;
+    font-size: 1vh;
 }
 
 .Credits .Key span {
@@ -303,26 +329,21 @@ main {
     line-height: 0.9;
 }
 
-.Credits .Key mark:nth-child(2) {
-    font-family: "CreditsIndiana";
-    font-size: 0.5vh;
-    line-height: 0.9;
-}
-
 /* FINAL PRODUCTION CREDITS */
 .Credits p:nth-child(4) {
     font-family: "CreditsIndianaBold";
     margin: 0;
-    line-height: 1;
+    line-height: 0.9;
+    font-size: 1vh;
+    
 }
 
 .Credits p:nth-child(4) mark {
     font-family: "CreditsIndiana";
-    color: #174b48;
     font-size: 0.5vh;
 }
 
-/* Remove default yellow highlighting */
+/* REMOVE DEFAULT MARK HIGHLIGHTING */
 mark {
     background-color: transparent;
     color: inherit;
