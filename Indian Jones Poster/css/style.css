@@ -42,7 +42,7 @@ main {
     display: grid;
     grid-template-rows: 1fr auto auto;
     align-content: stretch;
-    padding-bottom: 1%;
+    padding-bottom: 3%;
 }
 
 /* INDIANA JONES AND THE TEMPLE OF DOOM title position */
@@ -162,112 +162,111 @@ main {
     align-items: center;
     justify-content: center;
     margin: 0;
-
-    transform: translateY(-30px);
+    transform: translateY(-3vmin);
 }
 .Title h2 mark:nth-child(1){
     font-family: "Doom";
-    font-size: 0.8rem;
-    margin: 0;
+    font-size: 1.5vh;
+    margin-bottom: 5%;
     color:#353559;
 
     
     line-height: 1;
     white-space: nowrap;
 
-    transform: translate(110px, -32px);
+    transform: translate(11vmin, -4vmin);
 
 }
 
 .Title h2 mark:nth-child(2){
     font-family: "Doom";
     font-size: 0.8em;
-    letter-spacing: 1px;
+    letter-spacing: 0.1vh;
 
     padding: 0%;
-
+    font-size: 2.5vh;
     color: #eac463;
     -webkit-text-stroke: 0.1px black;
     filter: drop-shadow(-0.9px 1px 0px black);
-    transform: translate(20px, -15px);
+    transform: translate(4.5vmin, -2.6vmin);
 }
 
 
 
+.BtmTxt{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+    align-self: end;
+    margin: 0;
+    gap: 0.2vmin;
+}
 /* Paramount text */
 .Paramount {
-   font-family: "CreditsIndianaBold";
+    font-family: "CreditsIndianaBold";
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    text-align: bottom;
+    text-align: center;
     color: #174b48;
     font-size: 0.6vh;
     padding: 0% 7%;
-    gap:0;
+
+    gap: 2px;
+    margin: 0;
 }
-/* PRESENTS */
-.Paramount p:nth-child(1) {
-    margin: 0.2px;
+
+.Paramount p {
+    margin: 0;
     line-height: 1;
 }
-/* A SS FILM */
-.Paramount p:nth-child(2) {
-    margin: 0.2px;
-    line-height: 1;
-    margin-bottom: 0.3vh;
-}
+
+
 /* Bottom credits */
 .Credits {
     font-family: "CreditsIndiana";
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
     text-align: center;
-    
     color: #174b48;
     font-size: 1vh;
     line-height: 1;
-    margin-bottom: 0;
+
+    margin: 0;
+    gap: 0.4vmin;
 }
+
 /* HARRISON FORD */
 .Credits p:nth-child(1) {
     font-family: "CreditsIndianaBold";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    color: #174b48;
     font-size: 1vh;
-    margin-top:0.1vh;
-    margin-bottom: 0.1vh;
+    margin: 0;
 }
-/* IJ TD*/
+
+/* INDIANA JONES AND THE TEMPLE OF DOOM */
 .Credits p:nth-child(2) {
     font-family: "CreditsIndianaBold";
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-
-    color: #174b48;
     font-size: 1.1vh;
-    margin-top: 0.3vh;
-    margin-bottom: 0;
-
+    margin: 0;
 }
-.Credits p:nth-child(3) mark:nth-child(1){
-    font-family: "CreditsIndianaBold";
 
+/* KATE CAPSHAW TO PHILIP STONE */
+.Credits p:nth-child(3) mark:nth-child(1) {
+    font-family: "CreditsIndianaBold";
     color: #174b48;
     font-size: 1vh;
-
 }
+
 /* AND INCLUDING */
 .Credits .including {
     display: inline-flex;
@@ -284,17 +283,46 @@ main {
     white-space: nowrap;
     margin: 0 2px;
 }
+
 /* KEY HUY QUAN */
 .Credits .Key {
+    font-family: "CreditsIndianaBold";
+    margin: 0;
+}
+
+.Credits .Key span {
     display: inline-block;
     font-family: "CreditsIndianaBold";
     white-space: nowrap;
     color: #174b48;
 }
 
+.Credits .Key mark {
+    font-family: "CreditsIndiana";
+    font-size: 0.5vh;
+    line-height: 0.9;
+}
 
+.Credits .Key mark:nth-child(2) {
+    font-family: "CreditsIndiana";
+    font-size: 0.5vh;
+    line-height: 0.9;
+}
 
-/* Remove yellow highlighting */
+/* FINAL PRODUCTION CREDITS */
+.Credits p:nth-child(4) {
+    font-family: "CreditsIndianaBold";
+    margin: 0;
+    line-height: 1;
+}
+
+.Credits p:nth-child(4) mark {
+    font-family: "CreditsIndiana";
+    color: #174b48;
+    font-size: 0.5vh;
+}
+
+/* Remove default yellow highlighting */
 mark {
     background-color: transparent;
     color: inherit;
