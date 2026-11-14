@@ -29,7 +29,7 @@ body {
     overflow: hidden;
 }
 
-/* The poster image's size and aspect ratio are set. */
+/* The poster image's size and aspect ratio are set. Also the padding at the bottom decides how close the credits are to the bottom*/
 main {
     width: min(63vh, 100vw);
     aspect-ratio: 2 / 3;
@@ -40,6 +40,9 @@ main {
     background-position: center;
 
     display: grid;
+    grid-template-rows: 1fr auto auto;
+    align-content: stretch;
+    padding-bottom: 1%;
 }
 
 /* INDIANA JONES AND THE TEMPLE OF DOOM title position */
@@ -194,20 +197,30 @@ main {
 
 /* Paramount text */
 .Paramount {
+   font-family: "CreditsIndianaBold";
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    text-align: center;
+    text-align: bottom;
     color: #174b48;
-    font-size: 1vh;
+    font-size: 0.6vh;
+    padding: 0% 7%;
+    gap:0;
 }
-
-.Paramount p {
-    margin: 2px;
+/* PRESENTS */
+.Paramount p:nth-child(1) {
+    margin: 0.2px;
+    line-height: 1;
 }
-
+/* A SS FILM */
+.Paramount p:nth-child(2) {
+    margin: 0.2px;
+    line-height: 1;
+    margin-bottom: 0.3vh;
+}
 /* Bottom credits */
 .Credits {
     font-family: "CreditsIndiana";
@@ -219,8 +232,9 @@ main {
     color: #174b48;
     font-size: 1vh;
     line-height: 1;
-    padding: 0% 7%;
+    margin-bottom: 0;
 }
+/* HARRISON FORD */
 .Credits p:nth-child(1) {
     font-family: "CreditsIndianaBold";
     display: flex;
@@ -230,8 +244,10 @@ main {
 
     color: #174b48;
     font-size: 1vh;
+    margin-top:0.1vh;
     margin-bottom: 0.1vh;
 }
+/* IJ TD*/
 .Credits p:nth-child(2) {
     font-family: "CreditsIndianaBold";
     display: flex;
@@ -240,11 +256,43 @@ main {
     text-align: center;
 
     color: #174b48;
-    font-size: 1vh;
-    margin-bottom: 0.1vh;
-    margin-top: 0.1vh;
+    font-size: 1.1vh;
+    margin-top: 0.3vh;
+    margin-bottom: 0;
 
 }
+.Credits p:nth-child(3) mark:nth-child(1){
+    font-family: "CreditsIndianaBold";
+
+    color: #174b48;
+    font-size: 1vh;
+
+}
+/* AND INCLUDING */
+.Credits .including {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "CreditsIndiana";
+    font-size: 0.5vh;
+    line-height: 0.9;
+
+    color: #174b48;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 0 2px;
+}
+/* KEY HUY QUAN */
+.Credits .Key {
+    display: inline-block;
+    font-family: "CreditsIndianaBold";
+    white-space: nowrap;
+    color: #174b48;
+}
+
+
 
 /* Remove yellow highlighting */
 mark {
