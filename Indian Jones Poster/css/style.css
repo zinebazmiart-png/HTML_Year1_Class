@@ -94,13 +94,10 @@ main {
     -webkit-text-stroke: 0.1px black;
     filter: drop-shadow(-5px 5px 0px black);
     transition: transform 0.3s ease;
-
-
 }
-
+/*Hover effect make the title bigger when the mouse hovers over it*/
 .Title h1:hover{
     transform: scale(1.05);
-
 }
 /*This changes the position and size of each letter to obtain the same look as the original poster's title */
 .Title h1 mark {
@@ -167,6 +164,7 @@ main {
 }
 
 /*AND THE TEMPLE OF DOOM */
+/*Position of both parts of the subtitle*/
 .Title h2 {
     display: flex;
     align-items: center;
@@ -174,6 +172,7 @@ main {
     margin: 0;
     transform: translateY(-3vmin);
 }
+/*Stylizes "and the" and sets position*/
 .Title h2 mark:nth-child(1){
     font-family: "Doom";
     font-size: 1.5vh;
@@ -187,7 +186,7 @@ main {
     transform: translate(11vmin, -4vmin);
 
 }
-
+/*Stylizes "TEMPLE OF DOOM" and sets position*/
 .Title h2 mark:nth-child(2){
     font-family: "Doom";
     font-size: 0.8em;
@@ -203,7 +202,7 @@ main {
 
 
 
-/* BOTTOM TEXT CONTAINER */
+/* BOTTOM TEXT CONTAINER - IE THE WHOLE TEXT SPACE */
 .BtmTxt {
     color: #1a5248;
     display: flex;
@@ -242,9 +241,16 @@ main {
     margin: 0;
     line-height: 1;
 }
+/* HARRISON FORD */
+.Credits p:nth-child(1) {
+    font-family: "CreditsIndianaBold";
+    font-size: 1vh;
+    margin: 0;
+    padding-bottom: 0.2vh;
+}
 
 
-/* BOTTOM CREDITS */
+/* BOTTOM CREDITS - ALL THE TEXT AFTER HARRISON FORB */
 .Credits {
     font-family: "CreditsIndiana";
 
@@ -265,20 +271,13 @@ main {
     padding-bottom: 1.5vmin;
 }
 
-/* RESET PARAGRAPH SPACING */
+/* RESET PARAGRAPH SPACING FOR ENTIRE SECTION*/
 .Credits > p {
     width: 100%;
     margin: 0;
     line-height: 0.9;
 }
 
-/* HARRISON FORD */
-.Credits p:nth-child(1) {
-    font-family: "CreditsIndianaBold";
-    font-size: 1vh;
-    margin: 0;
-    padding-bottom: 0.2vh;
-}
 
 /* INDIANA JONES AND THE TEMPLE OF DOOM */
 .Credits p:nth-child(2) {
@@ -294,6 +293,7 @@ main {
 }
 
 /* AND INCLUDING */
+/*Changes the sizing of the text and creates a margins to make the text sit on top of each other*/
 .Credits .including {
     display: inline-flex;
     flex-direction: column;
@@ -315,7 +315,7 @@ main {
     margin: 0;
     font-size: 1vh;
 }
-
+/*EXECUTIVE PRODUCER*/
 .Credits .Key span {
     display: inline-block;
     font-family: "CreditsIndianaBold";
@@ -330,6 +330,8 @@ main {
 }
 
 /* FINAL PRODUCTION CREDITS */
+/*Adjusts height and size of the fonts of PEOPLE NAMES AFTER FRANK MARSHALL */
+
 .Credits p:nth-child(4) {
     font-family: "CreditsIndianaBold";
     margin: 0;
@@ -337,13 +339,14 @@ main {
     font-size: 1vh;
     
 }
+/*Adjusts height and size of the fonts FOR TINY TEXT*/
 
 .Credits p:nth-child(4) mark {
     font-family: "CreditsIndiana";
     font-size: 0.5vh;
 }
 
-/* REMOVE DEFAULT MARK HIGHLIGHTING */
+/* REMOVES DEFAULT MARK HIGHLIGHTING */
 mark {
     background-color: transparent;
     color: inherit;
