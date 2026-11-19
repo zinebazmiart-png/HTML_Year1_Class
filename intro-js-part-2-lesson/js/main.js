@@ -18,19 +18,19 @@ const pageMeta = {
 const ctaContent = {
     home: {
         heading: "123456",
-        test:"234455646",
+        text:"234455646",
         buttonText:"54645646f",
         link:"index.html"
     },
     about: {
         heading: "fjfxh",
-        test:"sdfghsfth",
+        text:"sdfghsfth",
         buttonText:"5464hsfghxgh5646f",
         link:"index.html"
     },
         contact: {
         heading: "123456",
-        test:"234455646",
+        text:"234455646",
         buttonText:"54645646f",
         link:"index.html"
     }
@@ -47,10 +47,10 @@ renderHead(createMetadata(meta.title, meta.description, meta.robots));
 
 render("#site-header", createHeader(page));
 render("#site-footer", createFooter(siteName));
-render("#cta",  createCalltoAction(ctaContent[page]));
+render("#cta",  createCallToAction(ctaContent[page]));
 
 const cardHtml = favourites
 .map((item) => createCard(item.title, item.text))
 .join("");
 
-render("#cards", cardsHtml);
+render("#cards", cardHtml);
