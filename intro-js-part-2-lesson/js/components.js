@@ -5,8 +5,8 @@ const siteName = "Bright Bean Coffee";
 // An ARRAY of objects: One per nav item 
 const navLinks = [
     {label: "Home", href: "index.html", page: "home"},
-    {label: "About", href: "About.html", page: "about"},
-    {label: "Contact", href: "Contact.html", page: "contact"}
+    {label: "About", href: "about.html", page: "about"},
+    {label: "Contact", href: "contact.html", page: "contact"}
 ];
 //Our 1st component ... Metadata
 //Small helper: makes text safe to sit inside an HTML attribute
@@ -22,7 +22,7 @@ function createMetadata(title, description, robots="index, nofollow"){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="${escapeAttribute(robots)}">
     <meta name="description" content="${escapeAttribute(description)}">
-    <title>${escapeAttribute(fullTitle)} </title>
+    <title>${escapeAttribute(fullTitle)}</title>
     `;
 }
 //Header component
@@ -58,7 +58,7 @@ function createHeader(currentPage){
     }
 
     //Call to action component
-    function createCalltoAction(content){
+    function createCallToAction(content){
         // this function takes one parameter and object holding all the content 
         //each page can send in different content, but the layout will stay the same
         return`
@@ -84,7 +84,7 @@ function createHeader(currentPage){
         const element = document.querySelector(selector);
        //If that page does't have that place holder queryselector gives a null
        if(element === null){
-        console.log("Could not find" + selector + " on this page");
+        console.log("Could not find " + selector + " on this page.");
         return;
        }
        element.innerHTML = html;
